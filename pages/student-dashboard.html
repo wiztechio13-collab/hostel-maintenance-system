@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">Maintenance Hub</div>
+
+      <nav class="nav-links">
+        <a href="student-dashboard.html">Dashboard</a>
+        <a href="report.html">Report Issue</a>
+        <a href="#myreports">My Reports</a>
+        <a href="../index.html">Logout</a>
+      </nav>
+    </header>
+
+    <main class="dashboard-container">
+      <section class="welcome-section">
+        <h1>Welcome back👋</h1>
+        <p>Report and track your hostel maintenance issues .</p>
+      </section>
+
+      <section class="stats-container">
+        <div class="stat-box">
+          <h3>Total Reports</h3>
+          <p>0</p>
+        </div>
+
+        <div class="stat-box">
+          <h3>Pending Reports</h3>
+          <p>0</p>
+        </div>
+
+        <div class="stat-box">
+          <h3>Resolved Reports</h3>
+          <p>0</p>
+        </div>
+      </section>
+
+      <section class="action-section">
+        <h2>Need something fixed?</h2>
+        <p>Report any maintenance issues you encounter in your hostel.</p>
+        <a href="report.html" class="report-button"
+          >+Report a Maintenance Issue</a
+        >
+      </section>
+
+      <section class="recent-section">
+        <div class="section-heading">
+          <h2>Recent Maintenance Requests</h2>
+          <a href="#myreports">View All</a>
+        </div>
+
+        <div class="recent-request">
+          <h3>No Maintenance requests yet</h3>
+          <p>Your recent reports would appear here</p>
+        </div>
+      </section>
+
+      <section class="my-reports-section" id="myreports">
+        <div class="section-heading">
+          <h2>My Reports</h2>
+          <p>View and track all your maintenance reports</p>
+        </div>
+
+        <div class="report-list">
+          <div class="report-item">
+            <div>
+              <h3>No reports yet</h3>
+              <p>Your submitted maitenance report would appear here</p>
+            </div>
+            <span class="status">No Report</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

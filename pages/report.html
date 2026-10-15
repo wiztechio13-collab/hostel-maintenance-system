@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report Issue</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <a href="student-dashboard.html" class="back-link">Back to Dashboard</a>
+    <header class="page-header">
+      <h1>Report Maintenance Issue</h1>
+      <p>
+        Please describe the maintenance issue you are experiencing in your
+        hostel.
+      </p>
+    </header>
+    <main class="report-container">
+      <form class="report-form" id="reportForm" >
+        <div class="form-group">
+          <label for="hostel🏠">Hostel🏠</label>
+          <select name="hostel" id="hostel" required>
+            <option value="">Select your hostel</option>
+            <option value="hostel-a">Hostel A</option>
+            <option value="hostel-b">Hostel B</option>
+            <option value="hostel-c">Hostel C</option>
+            <option value="hostel-d">Hostel D</option>
+            <option value="hostel-e">Hostel E</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="room">Room Number</label>
+          <input
+            type="text"
+            name="room"
+            id="room"
+            placeholder="Enter your room number"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="category">Fault Category</label>
+          <select name="category" id="category" required>
+            <option value="">Select a Fault Category</option>
+            <option value="electrical">Electrical</option>
+            <option value="plumbing">Plumbing</option>
+            <option value="furniture">Furniture</option>
+            <option value="internet">Internet</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="priority">Priority</label>
+          <select name="priority" id="priority" required>
+            <option value="">Select Priority</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+<div class="form-group">
+          <label for="description">Description</label>
+          <textarea
+            name="description"
+            id="description"
+            placeholder="Describe the maintenance issue "
+            required
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="image">Upload Image (optional)</label>
+          <input type="file" name="image" id="image" accept="image/*" />
+        </div>
+        <button type="submit" class="submit-button">Submit Report</button>
+      </form>
+    </main>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

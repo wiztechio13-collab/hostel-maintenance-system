@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="logo">Maintenance Hub</div>
+
+      <nav class="nav-links">
+        <a href="admin-dashboard.html">Dashboard</a>
+        <a href="../index.html">Logout</a>
+      </nav>
+    </header>
+
+    <main class="dashboard-container">
+      <section class="welcome-section">
+        <h2>Admin Dashboard</h2>
+        <p>
+          Welcome, Admin! <br />Manage and monitor hostel maitenance requests
+        </p>
+      </section>
+      <section class="stats-container">
+        <div class="stat-box">
+          <h3>Total Requests</h3>
+          <p>0</p>
+        </div>
+
+        <div class="stat-box">
+          <h3>Pending Requests</h3>
+          <p>0</p>
+        </div>
+
+        <div class="stat-box">
+          <h3>Resolved Requests</h3>
+          <p>0</p>
+        </div>
+      </section>
+
+      <section class="recent-section">
+        <div class="section-heading">
+          <h2>Maintenance Requests</h2>
+        </div>
+
+        <div class="report-item" id="adminReport">
+          <div>
+            <h3>No maintenance requests yet.</h3>
+            <p>Students maintenance requests will appear here.</p>
+          </div>
+
+          <span class="status">No Reports</span>
+          <a href="#" class="view-button">View Details</a>
+        </div>
+
+        <div class="request-controls">
+            <input type="text" placeholder="Search requests" />
+            <select>
+              <option value="">Filter by status</option>
+              <option value="pending">Pending</option>
+              <option value="resolved">Resolved</option>
+            </select>
+        </div>
+
+      </section>
+
+      <section class="action-section">
+        <h2>Maintenance Management</h2>
+        <p>Review and update maintenance requests status.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+        <p>Maintenance Hub &copy; 2026</p>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
